@@ -1,4 +1,4 @@
-# [Dacon] 20232 교원그룹 AI 챌린지
+# [Dacon] 2023 교원그룹 AI 챌린지
 ## Dacon Challenge overview
 **[주제]**<br/>
 손글씨 인식 AI 모델 개발
