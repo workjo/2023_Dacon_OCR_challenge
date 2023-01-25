@@ -15,17 +15,6 @@ Accuracy
 
 [대회 링크](https://dacon.io/competitions/official/236042/overview/description)
 
-## Dependencies
-- python 3.8
-- pytorch 1.10.1
-- torchvision 0.11.2
-- pandas
-- tqdm 
-- scikit-learn
-- tensorboard
-- setuptools
-- straug
-
 ## Datasets
 대회에서 제공하는 [데이터](https://dacon.io/competitions/official/236042/data)는 아래와 같이 구성
 ```
@@ -46,7 +35,20 @@ Naver Clova에서 발표한 CVPR 2019, "What Is Wrong With Scene Text Recognitio
 [paper](https://arxiv.org/abs/1904.01906)<br/>
 [github](https://github.com/clovaai/deep-text-recognition-benchmark)<br/>
 
-## Augmentation
+### Dependencies
+
+- python 3.8
+- pytorch 1.10.1
+- torchvision 0.11.2
+- pandas
+- tqdm 
+- scikit-learn
+- tensorboard
+- setuptools
+- straug
+
+
+### Augmentation
 [https://github.com/roatienza/straug] 에서 제공된 straug 라이브러리를 이용하여 augmentation 적용<br/>
 straug 라이브러리에서 제공하는 여러가지 blur 및 noise를 사용하였고, 그 중 Gaussian Blur를 0.5 비율로 train할 때, 가장 높은 정확도를 보임
 
