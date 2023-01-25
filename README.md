@@ -35,7 +35,7 @@ Naver Clova에서 발표한 CVPR 2019, "What Is Wrong With Scene Text Recognitio
 [paper](https://arxiv.org/abs/1904.01906)<br/>
 [github](https://github.com/clovaai/deep-text-recognition-benchmark)<br/>
 
-### Dependencies
+#### Dependencies
 
 - python 3.8
 - pytorch 1.10.1
@@ -48,7 +48,7 @@ Naver Clova에서 발표한 CVPR 2019, "What Is Wrong With Scene Text Recognitio
 - straug
 
 
-### Augmentation
+## Augmentation
 [https://github.com/roatienza/straug] 에서 제공된 straug 라이브러리를 이용하여 augmentation 적용<br/>
 straug 라이브러리에서 제공하는 여러가지 blur 및 noise를 사용하였고, 그 중 Gaussian Blur를 0.5 비율로 train할 때, 가장 높은 정확도를 보임
 
