@@ -26,7 +26,7 @@ CFG = {
     'grad_clip':5,                              ## gradient clipping value. default=5
     'saved_model':'',                           ## location of the pretrained model. default=''
     'FT':False,                                 ## finetuning. default=False
-    'aug':False                                 ## gaussian blur for image augmentation (ratio:0.5)
+    'aug':True                                  ## gaussian blur for image augmentation (ratio:0.5)
 }
 
 now = dt.datetime.now().strftime("%y%m%d_%H%M")
