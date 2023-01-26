@@ -30,7 +30,7 @@ Accuracy
 
 ## Baseline Model
 Naver Clova에서 발표한 CVPR 2019, "What Is Wrong With Scene Text Recognition Model Comparisons? Dataset and Model Analysis"에서 제공된 코드를 이용하였으며, 모델 구성은 다음과 같이 사용.<br/>
-`"TPS - ResNet - BiLSTM - Attn"`<br/>
+`"TPS(Thin-Plate Spline) - ResNet - BiLSTM - Attn(Attention-based sequence prediction)"`<br/>
 
 [paper](https://arxiv.org/abs/1904.01906)<br/>
 [github](https://github.com/clovaai/deep-text-recognition-benchmark)<br/>
