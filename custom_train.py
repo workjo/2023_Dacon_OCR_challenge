@@ -13,9 +13,9 @@ def train(model, optimizer, criterion, train_loader, val_loader, converter, CFG,
 
     best_accuracy = -1
     best_model = None
-    loss_dict = {}                                  ## add_221227
-    loss_dict['train_loss_lst'] = []                ## add_221227
-    loss_dict['val_loss_lst'] = []                  ## add_221227
+    loss_dict = {}
+    loss_dict['train_loss_lst'] = []
+    loss_dict['val_loss_lst'] = []
     loss_dict['accuracy'] = []
     writer = SummaryWriter(f'./saved_models/{CFG["exp_name"]}/')
 
@@ -66,23 +66,10 @@ def train(model, optimizer, criterion, train_loader, val_loader, converter, CFG,
 
             current_model_log = f'{"Current_accuracy":17s}: {current_accuracy:0.3f}'
 
-            # keep best accuracy model (on valid dataset)
-            ########################################################
-            # modified_001 230104 (Jo)
-            # 1) switch accuracy/train_loss
-            ########################################################
             if current_accuracy > best_accuracy:
                 best_accuracy = current_accuracy
                 best_model = model
                 torch.save(model.state_dict(), f'./saved_models/{CFG["exp_name"]}/best_accuracy.pth')
-            ########################################################
-            # if _train_loss < best_accuracy:
-            #     best_accuracy = _train_loss
-            #     best_model = model
-            #     torch.save(model.state_dict(), f'./saved_models/{CFG["exp_name"]}/best_train_loss.pth')
-            ########################################################
-            # end of modified_001 230104 (Jo)
-            ########################################################
 
             best_model_log = f'{"Best_accuracy":17s}: {best_accuracy:0.3f}'
 
