@@ -78,12 +78,7 @@ class CustomDataset(Dataset):
                 transforms.Normalize(mean=(0.5), std=(0.5))
             ])
 
-        # transform_ops = image.resize((CFG['IMG_HEIGHT_SIZE'], CFG['IMG_WIDTH_SIZE']), 3)
-        # img = self.toTensor(transform_ops)
-        # img.sub_(0.5).div_(0.5)
-
         return transform_ops(image)
-        # return img
 
     def test_transform(self, image, CFG):
         if CFG['input_channel'] == 3:
@@ -100,10 +95,4 @@ class CustomDataset(Dataset):
                 transforms.Normalize(mean=(0.5), std=(0.5))
             ])
 
-        # transform_ops = image.resize((CFG['IMG_HEIGHT_SIZE'], CFG['IMG_WIDTH_SIZE']), 3)
-        # img = self.toTensor(transform_ops)
-        # img.sub_(0.5).div_(0.5)
-
         return transform_ops(image)
-        # return img
-
